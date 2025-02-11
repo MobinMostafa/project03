@@ -194,10 +194,12 @@
        </nav>
        <!-- banner part start  -->
        <div class="w-full mt-[48px] lg:mt[90px] px-[20px] xl:px-[0] max-w-7xl flex flex-col justify-center items-center">
-            <div class="banner-top lg:w-[827px]">
-                <h1 class="text-[#111111] text-[32px] font-[600] xl:text-[56px] capitalize text-center">Freshness <span class="text-[#179800]">You Can <br>
-                Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-[16px] font-[300] lg:font-[400] lg:text-[20px] text-[#111111] text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <div class="banner-top lg:w-[840px]">
+                <h1 class="text-container text-[#111111] text-[32px] font-[600] xl:text-[56px] capitalize text-center">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span> On, <span id="animated-text"> </span>
+                </h1>
+            
+                <p class="text-[16px] font-[300] lg:font-[400] lg:text-[20px] text-[#111111] text-center mt-[16px] lg:mt-[0]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
             <div class="banner-image mt-[16px] lg:mt-[37px]">
                  <img src="assets/hero-vegetables.png" alt="">
@@ -551,9 +553,9 @@
               <p style="color:rgba(255, 255, 255, 0.7)" class="mt-[12px] text-[18px] font-[400] lg:w-[426px]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
            </div>
            <div class="flex flex-col gap-[20px] justify-between mt-[36px] lg:mt[0]">
-              <a href="#" class="block text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Product</a>
-              <a href="#" class="block text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Services</a>
-              <a href="#" class="block text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Contact us</a>
+              <a href="#" class="block hover:text-[#2A4D97] text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Product</a>
+              <a href="#" class="block hover:text-[#2A4D97] text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Services</a>
+              <a href="#" class="block hover:text-[#2A4D97] text-[#EFEBE3] cursor-pointer text-[18px] font-[400]">Contact us</a>
               
            </div>
            <div class="flex flex-col justify-end mt-[36px] lg:mt[0]">
@@ -604,6 +606,8 @@
     </footer>
     <!-- footer end -->
 
+    <!-- typed animation cdn  -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
      <!-- JavaScript for Mobile Menu Toggle -->
   <script>
@@ -613,6 +617,14 @@
     btn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+
+    // type animation js 
+    var typed = new Typed('#animated-text', {
+      strings: ['Prices You’ll Love!', 'Deals That Thrill!','Prices You’ll Love!'],
+      loop: true,
+      typeSpeed: 100,
+    });
+
   </script>
 </body>
 </html>
